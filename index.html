@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Swapping</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!--Div container with the main image--> 
+    <div class="mainImage">
+        <img src="images/bbmuffiin.webp" alt="Blueberry Muffin">
+    </div>
+    <!--4 images with the "this" data type which in this case is used to tell the console that the image that was clicked is the image to be passed to the function-->
+    <img src="images/bmuffin.webp" id="img1" alt="Banana Muffin" onclick="changeImage(this)">
+    <img src="images/cocomuffin.jpg" id="img2" alt="Coconut Muffin" onclick="changeImage(this)">
+    <img src="images/ffmuffins.jpg" id="img3" alt="FunFetti Muffins" onclick="changeImage(this)">
+    <img src="images/bbmuffiin.webp" id="img4" alt="Blueberry Muffin" onclick="changeImage(this)">
+</body>
+</html>
