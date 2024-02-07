@@ -1,17 +1,14 @@
-let lastClickedImageSrc; 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the variable after the DOM is fully loaded
-    lastClickedImageSrc = document.querySelector('.mainImage img').src;
-});
-
+/**
+*  Image Swapping Function
+* @param {clickedImage}
+* @returns {mainImage}
+* @example
+* 
+*/
 function changeImage(clickedImage) {
-   
-    var mainImage = document.querySelector('.mainImage img');
+   //Grabbing image data and setting it to the thumbnail
 
-    // Set the main image's source file to the last clicked image's
-    mainImage.src = lastClickedImageSrc;
-
-    // Update the lastClickedImageSrc to the source of the currently clicked image
-    lastClickedImageSrc = clickedImage.src;
+    let mainImage = document.getElementById("mainImage"); //selecting the main image
+    mainImage.src = clickedImage.src; //setting the main image to the thumbnail
 }
